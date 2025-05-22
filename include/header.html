@@ -1,0 +1,672 @@
+<script src="/assets/js/Enquiry.js"></script>
+<script src="/angularScripts/sweetalert2.min.js"></script>
+<!-- <script src="/angularScripts/angular.js"></script>
+<script src="/angularScripts/PrintoApp.js"></script>
+<script src="/angularScripts/ApiCallService/ApiCallService.js"></script>
+<script src="/angularScripts/Controller/EnquiryController.js"></script> -->
+
+
+<header>
+
+    
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="top-header">
+                    <div>
+                        <a href="index.html" class="cr-logo">
+                            <img src="assets/img/printo-logo/new-logo.jpg" alt="logo" class="logo">
+                            <img src="assets/img/printo-logo/printo-logooo.jpg" alt="logo" class="dark-logo">
+                        </a>
+                    </div>
+                    <nav class="navbar navbar-expand-lg" style="margin-bottom: 20px;"> <!-- Added margin-bottom -->
+                        <a href="javascript:void(0)" class="navbar-toggler shadow-none">
+                            <i class="ri-menu-3-line"></i>
+                        </a>
+
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#">About Us</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="about.html"> About
+                                                PrintoGifts</a></li>
+                                        <li><a class="dropdown-item" href="mission-vission.html">Vision & Mission
+                                                Values</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="javascript:void(0)">Products</a>
+                                    <ul class="dropdown-menu multi-column width-only">
+                                        <div class="row">
+
+
+                                            <div class="col-md-3">
+                                                <h6 class="dropdown-header"> <a href="pen-diary-category.html">Diaries &
+                                                        Pen</a></h6>
+                                                <a class="dropdown-item" href="#">Branded Pens</a>
+                                                <a class="dropdown-item" href="pens.html">Pens</a>
+
+                                                <a class="dropdown-item" href="#">Executive Diaries</a>
+                                                <a class="dropdown-item" href="#">Eco-friendly Diaries</a>
+                                                <a class="dropdown-item" href="#">New Year Diaries</a>
+
+                                            </div>
+
+                                            <div class="col-md-3">
+                                                <h6 class="dropdown-header"><a href="bottles-mugs-category.html">Bottles
+                                                        & Mug
+                                                    </a></h6>
+                                                <a class="dropdown-item" href="water-bottles.html">Water Bottles</a>
+                                                <a class="dropdown-item" href="hot-cold-bottles.html">Hot & Cold
+                                                    Bottles</a>
+                                                <a class="dropdown-item" href="mugs-tubmlers.html">Mugs and Tumblers</a>
+                                            </div>
+
+                                            <div class="col-md-3">
+                                                <h6 class="dropdown-header"> <a href="bags-category.html">Bags</a>
+                                                </h6>
+                                                <a class="dropdown-item" href="backpack.html">Backpacks</a>
+                                                <a class="dropdown-item" href="laptop-accesaries.html">Laptop
+                                                    Bags</a>
+                                                <a class="dropdown-item" href="multi-purpose-pouches.html">Multi Purpose
+                                                    Pouches</a>
+                                                <a class="dropdown-item" href="leather-bag.html">Leatherette
+                                                    Bags</a>
+                                                <a class="dropdown-item" href="travel-bag.html">Travelling
+                                                    Bags</a>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <h6 class="dropdown-header"><a
+                                                        href="desktop-product-category.html">Desktop Products</a>
+                                                </h6>
+
+                                                <a class="dropdown-item" href="wooden-destop-product.html">Wooden</a>
+                                                <a class="dropdown-item" href="glass-desktop-product.html">Glass</a>
+                                                <a class="dropdown-item" href="#">Metal</a>
+                                            </div>
+
+                                            <div class="col-md-6">
+                                                <h6 class="dropdown-header"><a
+                                                        href="Electronic-gadjet.html">Electronic-Product</a></h6>
+                                                <ul class="d-md-flex">
+                                                    <li>
+                                                        <a class="dropdown-item" href="power-bank.html">Power Banks</a>
+                                                        <a class="dropdown-item" href="speaker.html">Bluetooth
+                                                            Speakers</a>
+                                                        <a class="dropdown-item" href="usb-gadjets.html">USB Gadgets</a>
+
+                                                        <a class="dropdown-item" href="mouse.html">Mouse</a>
+                                                        <!-- <a class="dropdown-item" href="#">Desktop Charger</a> -->
+                                                        <a class="dropdown-item" href="headphones.html">Headphones,
+                                                            AirPods</a>
+                                                        <!-- <a class="dropdown-item" href="#">Branded Electronics Products</a> -->
+                                                        <a class="dropdown-item" href="keyboard.html">Keyboard</a>
+                                                        <!-- <a class="dropdown-item" href="#">Pen Drives</a> -->
+                                                        <a class="dropdown-item"
+                                                            href="phone-holder.html">Phone-Holders</a>
+                                                        <!-- <a class="dropdown-item" href="#">Lamp</a> -->
+                                                        <a class="dropdown-item" href="neckbard-earphone.html">Neck
+                                                            Bands,Wire earphone</a>
+
+                                                        <a class="dropdown-item" href="#">Lamp</a>
+                                                    <li>
+                                                    <li class="">
+                                                        <a class="dropdown-item"
+                                                            href="laptop-stand.html">Laptop-Stand</a>
+                                                        <a class="dropdown-item"
+                                                            href="mini-sounder.html">Mini-Sounder</a>
+                                                        <a class="dropdown-item" href="converter.html">Converter</a>
+                                                        <a class="dropdown-item" href="lcd-writing-pad.html">Lcd Writing
+                                                            Pad</a>
+                                                        <a class="dropdown-item"
+                                                            href="power-adapter.html">Power-adapter</a>
+                                                        <a class="dropdown-item" href="projector.html">Projector</a>
+                                                        <a class="dropdown-item"
+                                                            href="innovative-product.html">Innovative-Product</a>
+                                                        <a class="dropdown-item"
+                                                            href="wireless-charger.html">Wireless-Charger</a>
+
+                                                    </li>
+                                                </ul>
+
+                                            </div>
+                                            <div class="col-md-3">
+                                                <h6 class="dropdown-header"> <a href="trophies.html">Trophies </a>
+                                                </h6>
+                                                <a class="dropdown-item" href="">MDF & Acrylic
+                                                    Trophies</a>
+                                                <a class="dropdown-item" href="crystal-trophies.html">Glass
+                                                    Trophies</a>
+                                                <a class="dropdown-item" href="metals-trophies.html">Metal
+                                                    Trophies</a>
+                                                <a class="dropdown-item" href="medals.html">Medals</a>
+                                                <a class="dropdown-item" href="wooden-trophies.html">Wooden
+                                                    Trophies</a>
+                                                <a class="dropdown-item" href="wood-plaque-trophies.html">Wood Plaque
+                                                    Trophies
+                                                </a>
+
+                                            </div>
+
+
+
+
+
+
+
+                                            <div class="col-md-3">
+                                                <h6 class="dropdown-header"> <a
+                                                        href="eco-friendly-product.html">Eco-Friendly Products</a>
+                                                </h6>
+                                                <!-- <a class="dropdown-item" href="#">Eco-Friendly Notepads</a>
+                                                <a class="dropdown-item" href="#">Eco-Friendly Pens</a> -->
+                                                <a class="dropdown-item" href="desktop-eco-friendly-only.html">Desktop
+                                                    Product
+                                                </a>
+                                                <a class="dropdown-item" href="#"> Gift Hampers </a>
+                                                <a class="dropdown-item" href="other-eco-friendly.html">Other Product
+                                                </a>
+
+
+                                            </div>
+
+                                            <div class="col-md-3">
+                                                <h6 class="dropdown-header"> <a href="cloths.html">Clothes</a></h6>
+                                                <a class="dropdown-item" href="formal-shirts.html">Formal-Shirts</a>
+                                                <a class="dropdown-item" href="hodde-cloth.html">Hoodies</a>
+                                                <a class="dropdown-item" href="jacket-cloth.html">Jackets</a>
+                                                <a class="dropdown-item" href="polo-t-shirt.html">Polo-T-Shirts</a>
+                                                <a class="dropdown-item" href="round-t-shirt.html">Round-T-Shirts</a>
+
+                                                <a class="dropdown-item" href="sweatshirt.html">Sweatshirts</a>
+
+                                            </div>
+
+
+
+
+
+                                            <!-- 
+
+
+                                        <div class="col-md-3">
+                                                <h6 class="dropdown-header"> <a href="gift-hamper-category.html">Gift
+                                                        Hampers</a>
+
+                                                    <a class="dropdown-item" href="gift-set.html"> Gift Sets</a>
+                                                    <a class="dropdown-item" href="luxury-gift-set.html">Luxury Gift
+                                                        Sets</a>
+                                                    <a class="dropdown-item" href="#">Customized Gift Sets</a>
+                                                    <a class="dropdown-item" href="#">Food Hamper</a>
+                                            </div>  -->
+
+                                            <div class="col-md-3">
+                                                <h6 class="dropdown-header"><a href="gift-hamper-category.html">Gift
+                                                        Hampers
+                                                    </a></h6>
+                                                <a class="dropdown-item" href="gift-set.html"> Gift Sets</a>
+                                                <a class="dropdown-item" href="luxury-gift-set.html">Luxury Gift
+                                                    Sets</a>
+                                                <a class="dropdown-item" href="#">Customized Gift Sets</a>
+                                                <a class="dropdown-item" href="#">Food Hamper</a>
+
+
+
+
+
+                                            </div>
+
+
+
+
+                                            <div class="col-md-3">
+                                                <h6 class="dropdown-header"><a href="keychains-category.html">Other
+                                                        Customized Product
+                                                    </a></h6>
+
+                                                <a class="dropdown-item" href="keychain.html">Keychains</a>
+                                                <!-- <a class="dropdown-item" href="custamized.html">Customized
+                                                    Keychains</a> -->
+                                                <a class="dropdown-item" href="#">Pendrives
+                                                </a>
+                                                <a class="dropdown-item" href="#">Badget
+                                                </a>
+
+                                                <a class="dropdown-item" href="#">Fridge Magnet
+                                                </a>
+                                                <a class="dropdown-item" href="#"> Card Holder
+                                                </a>
+
+
+
+
+
+
+                                            </div>
+
+
+
+                                            <!-- 
+                                            <div class="col-md-3">
+                                                <h6 class="dropdown-header"><a href="keychains-category.html">Keychains
+                                                    </a></h6>
+
+                                                <a class="dropdown-item" href="keychain.html">Keychains</a>
+                                                <a class="dropdown-item" href="custamized.html">Customized
+                                                    Keychains</a>
+                                            </div> -->
+
+
+
+
+
+                                            <!-- 
+                                            <div class="col-md-3">
+                                                <h6 class="dropdown-header">Diaries</h6>
+
+                                            </div> -->
+
+
+
+
+
+
+
+                                            <!-- <div class="col-md-3">
+                                                <h6 class="dropdown-header">Customized Caricature</h6>
+                                                <a class="dropdown-item" href="#">Acrylic</a>
+                                                <a class="dropdown-item" href="#">3D</a>
+                                            </div> -->
+
+                                            <!-- 
+                                            <div class="col-md-3">
+                                                <h6 class="dropdown-header">Other Gifting Products</h6>
+                                            </div> -->
+                                        </div>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#">Services</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="printing.html"> Corporate Printing</a></li>
+                                        <li><a class="dropdown-item" href="gifting.html"> Corporate Gifting</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link" href="contact.html">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <div class="cr-right-bar">
+
+                        <!-- <a href="javascript:void(0)" class="cr-right-bar-item Shopping-toggle "
+                            data-bs-target="#enquiryModal1" data-bs-toggle="modal" id="#">
+                            <i class="ri-user-line "></i>
+                            <span >Enquiry</span>
+                        </a> -->
+
+                        <a href="javascript:void(0)" 
+                        class="cr-right-bar-item Shopping-toggle" 
+                        data-bs-toggle="modal" 
+                        data-bs-target="#enquiryModal1">
+                        <i class="ri-user-line"></i>
+                        <span>Enquiry</span>
+                        </a>
+
+
+
+                        <!-- 
+                        <a href="#" class="shop-now-btn" data-bs-toggle="modal"
+                            data-bs-target="#enquiryModal">Enquiry</a>
+                        class="cr-right-bar-item Shopping-toggle -->
+
+                        <a href="javascript:void(0)" class="cr-right-bar-item Shopping-toggle" id="#">
+                            <i class="ri-phone-line"></i>
+
+                            <div class="" style="display: flex; flex-direction: column; gap: 10px;">
+                                <span>+91 9029 686 805</span>
+                                <span>+91 9324 114 465</span>
+
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cr-fix" id="cr-main-menu-desk">
+        <div class="container">
+            <div class="cr-menu-list">
+
+                <!-- toggler -->
+
+
+
+                <!-- <div class="cr-calling">
+                     <i class="ri-phone-line"></i>
+                     <a href="javascript:void(0)">+123 ( 456 ) ( 7890 )</a>
+                 </div> -->
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+<!-- Mobile menu -->
+
+<div class="cr-sidebar-overlay"></div>
+<div id="cr_mobile_menu" class="cr-side-cart cr-mobile-menu">
+    <div class="cr-menu-title">
+        <div>
+            <a href="index.html" class="cr-logo">
+                <img src="./assets/img/printo-logo/new-logo.jpg" alt="logo" class="logo">
+            </a>
+        </div>
+        <button type="button" class="cr-close">×</button>
+    </div>
+    <div class="cr-menu-inner">
+        <div class="cr-menu-content">
+            <ul>
+                <li class="dropdown drop-list">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="dropdown drop-list">
+                    <span class="menu-toggle"></span>
+                    <a href="javascript:void(0)" class="dropdown-list">About</a>
+                    <ul class="sub-menu">
+                        <li><a class="dropdown-item" href="about.html"> About
+                                PrintoGifts</a></li>
+                        <li><a class="dropdown-item" href="mission-vission.html">Vision & Mission
+                                Values</a></li>
+
+                    </ul>
+                </li>
+                <li class="dropdown drop-list">
+                    <span class="menu-toggle"></span>
+                    <a href="javascript:void(0)" class="dropdown-list">Products</a>
+                    <ul class="sub-menu dropdown-menu multi-column width-only">
+                        <div class="row">
+
+
+                            <div class="col-md-3">
+                                <h6 class="dropdown-header"> <a style="font-size: 14px; font-weight: 800;"
+                                        href="pen-diary-category.html">Diaries & Pen </a></h6>
+                                <a class="dropdown-item" href="#">Branded Pens</a>
+                                <a class="dropdown-item" href="pens.html">Pens</a>
+
+                                <a class="dropdown-item" href="#">Executive Diaries</a>
+                                <a class="dropdown-item" href="#">Eco-friendly Diaries</a>
+                                <a class="dropdown-item" href="#">New Year Diaries</a>
+
+
+                            </div>
+
+                            <div class="col-md-3">
+                                <h6 class="dropdown-header"><a href="bottles-mugs-category.html"
+                                        style="font-size: 14px; font-weight: 800;">Bottles
+                                        & Mug
+                                    </a></h6>
+                                <a class="dropdown-item" href="water-bottles.html">Water Bottles</a>
+                                <a class="dropdown-item" href="hot-cold-bottles.html">Hot & Cold
+                                    Bottles</a>
+                                <a class="dropdown-item" href="mugs-tubmlers.html">Mugs and Tumblers</a>
+
+                            </div>
+                            <div class="col-md-3">
+                                <h6 class="dropdown-header"> <a href="bags-category.html"
+                                        style="font-size: 14px; font-weight: 800;">Bags</a>
+                                </h6>
+                                <a class="dropdown-item" href="backpack.html">Backpacks</a>
+                                <a class="dropdown-item" href="laptop-accesaries.html">Laptop
+                                    Bags</a>
+                                <a class="dropdown-item" href="multi-purpose-pouches.html">Multi Purpose
+                                    Pouches</a>
+                                <a class="dropdown-item" href="leather-bag.html">Leatherette
+                                    Bags</a>
+                                <a class="dropdown-item" href="travel-bag.html">Travelling
+                                    Bags</a>
+                            </div>
+
+
+                            <div class="col-md-3">
+                                <h6 class="dropdown-header"><a style="font-size: 14px; font-weight: 800;"
+                                        href="desktop-product-category.html">Desktop Products</a>
+                                </h6>
+
+                                <a class="dropdown-item" href="wooden-destop-product.html">Wooden</a>
+                                <a class="dropdown-item" href="glass-desktop-product.html">Glass</a>
+                                <a class="dropdown-item" href="#">Metal</a>
+                            </div>
+
+                            <div class="col-md-3">
+                                <h6 class="dropdown-header"><a href="Electronic-gadjet.html"
+                                        style="font-size: 14px; font-weight: 800;">Electronic-Products</a> </h6>
+                                <a class="dropdown-item" href="power-bank.html">Power Banks</a>
+                                <a class="dropdown-item" href="speaker.html">Bluetooth
+                                    Speakers</a>
+                                <a class="dropdown-item" href="usb-gadjets.html">USB Gadgets</a>
+
+                                <a class="dropdown-item" href="mouse.html">Mouse</a>
+                                <!-- <a class="dropdown-item" href="#">Desktop Charger</a> -->
+                                <a class="dropdown-item" href="headphones.html">Headphones,
+                                    AirPods</a>
+                                <!-- <a class="dropdown-item" href="#">Branded Electronics Products</a> -->
+                                <a class="dropdown-item" href="keyboard.html">Keyboard</a>
+                                <!-- <a class="dropdown-item" href="#">Pen Drives</a> -->
+                                <a class="dropdown-item" href="phone-holder.html">Phone-Holders</a>
+                                <!-- <a class="dropdown-item" href="#">Lamp</a> -->
+                                <a class="dropdown-item" href="neckbard-earphone.html">Neck
+                                    Bands,Wire earphone</a>
+
+
+
+                                <a class="dropdown-item" href="laptop-stand.html">Laptop-Stand</a>
+                                <a class="dropdown-item" href="mini-sounder.html">Mini-Sounder</a>
+                                <a class="dropdown-item" href="converter.html">Converter</a>
+                                <a class="dropdown-item" href="lcd-writing-pad.html">Lcd Writing
+                                    Pad</a>
+                                <a class="dropdown-item" href="power-adapter.html">Power-adapter</a>
+                                <a class="dropdown-item" href="projector.html">Projector</a>
+                                <a class="dropdown-item" href="innovative-product.html">Innovative-Product</a>
+                                <a class="dropdown-item" href="wireless-charger.html">Wireless-Charger</a>
+                                <a class="dropdown-item" href="#">Lamp</a>
+
+                            </div>
+
+                            <div class="col-md-3">
+                                <h6 class="dropdown-header"> <a style="font-size: 14px; font-weight: 800;"
+                                        href="trophies.html">Trophies </a>
+                                </h6>
+                                <a class="dropdown-item" href="">MDF & Acrylic
+                                    Trophies</a>
+                                <a class="dropdown-item" href="crystal-trophies.html">Glass
+                                    Trophies</a>
+                                <a class="dropdown-item" href="metals-trophies.html">Metal
+                                    Trophies</a>
+                                <a class="dropdown-item" href="medals.html">Medals</a>
+                                <a class="dropdown-item" href="wooden-trophies.html">Wooden
+                                    Trophies</a>
+                                <a class="dropdown-item" href="wood-plaque-trophies.html">Wood Plaque
+                                    Trophies
+                                </a>
+
+                            </div>
+
+                            <div class="col-md-3">
+                                <h6 class="dropdown-header"> <a style="font-size: 14px; font-weight: 800;"
+                                        href="eco-friendly-product.html">Eco-Friendly Products</a>
+                                </h6>
+                                <!-- <a class="dropdown-item" href="#">Eco-Friendly Notepads</a>
+                        <a class="dropdown-item" href="#">Eco-Friendly Pens</a> -->
+                                <a class="dropdown-item" href="desktop-eco-friendly-only.html">Desktop Product
+                                </a>
+                                <a class="dropdown-item" href="#"> Gift Hampers </a>
+                                <a class="dropdown-item" href="other-eco-friendly.html">Other Product
+                                </a>
+                            </div>
+
+
+
+                            <div class="col-md-3">
+                                <h6 class="dropdown-header"> <a style="font-size: 14px; font-weight: 800;"
+                                        href="cloths.html">Clothes</a></h6>
+                                <a class="dropdown-item" href="formal-shirts.html">Formal-Shirts</a>
+                                <a class="dropdown-item" href="hodde-cloth.html">Hoodies</a>
+                                <a class="dropdown-item" href="jacket-cloth.html">Jackets</a>
+                                <a class="dropdown-item" href="polo-t-shirt.html">Polo-T-Shirts</a>
+                                <a class="dropdown-item" href="round-t-shirt.html">Round-T-Shirts</a>
+
+                                <a class="dropdown-item" href="sweatshirt.html">Sweatshirts</a>
+                            </div>
+                            <div class="col-md-3">
+                                <h6 class="dropdown-header"><a style="font-size: 14px; font-weight: 800;"
+                                        href="gift-hamper-category.html">Gift
+                                        Hampers
+                                    </a></h6>
+                                <a class="dropdown-item" href="gift-set.html"> Gift Sets</a>
+                                <a class="dropdown-item" href="luxury-gift-set.html">Luxury Gift
+                                    Sets</a>
+                                <a class="dropdown-item" href="#">Customized Gift Sets</a>
+                                <a class="dropdown-item" href="#">Food Hamper</a>
+                            </div>
+
+                            <div class="col-md-3">
+                                <h6 class="dropdown-header"><a href="keychains-category.html">Other
+                                        Customized Product
+                                    </a></h6>
+
+                                <a class="dropdown-item" style="font-size: 14px; font-weight: 800;"
+                                    href="keychain.html">Keychains</a>
+                                <!-- <a class="dropdown-item" href="custamized.html">Customized
+                                    Keychains</a> -->
+                                <a class="dropdown-item" href="#">Pendrives
+                                </a>
+                                <a class="dropdown-item" href="#">Badget
+                                </a>
+
+                                <a class="dropdown-item" href="#">Fridge Magnet
+                                </a>
+                                <a class="dropdown-item" href="#"> Card Holder
+                                </a>
+
+
+
+
+
+
+                            </div>
+
+
+
+
+
+
+                        </div>
+                    </ul>
+                </li>
+
+
+
+                <li class="dropdown drop-list">
+                    <span class="menu-toggle"></span>
+                    <a href="javascript:void(0)" class="dropdown-list">Services</a>
+                    <ul class="sub-menu">
+                        <li><a href="printing.html"> Corporate Printing</a></li>
+                        <li><a href="gifting.html">Corporate Gifting</a></li>
+
+                    </ul>
+                </li>
+
+                <li class="dropdown drop-list">
+                    <a href="contact.html">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="enquiryModal1" tabindex="-1" aria-labelledby="enquiryModalLabel" aria-hidden="true"  >
+    <div class="modal-dialog" >
+        <div class="modal-content" style="background-color: ghostwhite;">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-header" style="margin: 0 auto;     padding-bottom: 0;">
+                <h5 class="modal-title " id="enquiryModalLabel" style="font-size: 33px; color: #1061a1;">
+                    Get In Touch
+                </h5>
+
+
+            </div>
+            <div class="modal-header" style="margin: 0 auto; padding: 0px;">
+
+
+                <small>Please submit the details in below form and we will call / email you to discuss your
+                    requirements / queries.</small>
+            </div>
+
+
+            <div class="modal-body">
+                <form id="enquiryForm">
+                    <div class="row mb-3">
+                        <div class="col-12 col-md">
+                            <label for="firstName" class="form-label">Full  Name</label>
+                            <input type="text" class="form-control" id="firstName1" required>
+                        </div>
+                        <div class="col-12 col-md">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email1" required>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-12 col-md">
+                            <label for="product" class="form-label">Product</label>
+                            <input type="text" class="form-control" id="product1" required>
+                        </div>
+                        <div class="col-12 col-md">
+                            <label for="quantity" class="form-label">Quantity</label>
+                            <input type="text" class="form-control" id="quantity1" required>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-12">
+                            <label for="productDescription" class="form-label">Product Description</label>
+                            <textarea class="form-control" id="productDescription1" rows="2" required></textarea>
+                        </div>
+                    </div>
+                    
+                    <div class="row mb-3">
+                        <div class="col-12 text-center">
+                            <span id="FormError1" class="text-danger d-none fw-semibold" >Error msg</span>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+            <div class="modal-footer">
+
+                <button type="button" class="btn btn-secondary pop-up-submit" onclick="EnquiryFomrHeader()" id="submitEnquiryForm" form="enquiryForm1">Submit <i
+                        class="ri-arrow-right-line ml-2"></i></button>
+                <!-- <button type="button" class="btn btn-secondary pop-up-submit" ng-click="SubmitForm1()" form="enquiryForm1">Submit <i
+                        class="ri-arrow-right-line ml-2"></i></button> -->
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script>
+    
+</script>
+
+
+
