@@ -1,0 +1,732 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Brulon Group</title>
+    <meta name="description"
+        content="BRULON GROUP has been evolved by the professional experts in dentistry for the last 60 years. With it's third generation in the dental field, BRULON is deeply rooted in dental trade in India.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png">
+    <link rel="stylesheet" href="assets/css/loading.css">
+
+
+
+
+    <!-- CSS here -->
+    <!-- <link rel="stylesheet" href="assets/css/bootstrap.css">
+      <link rel="stylesheet" href="assets/css/animate.css">
+      <link rel="stylesheet" href="assets/css/swiper-bundle.css">
+      <link rel="stylesheet" href="assets/css/slick.css">
+      <link rel="stylesheet" href="assets/css/magnific-popup.css">
+      <link rel="stylesheet" href="assets/css/font-awesome-pro.css">
+      <link rel="stylesheet" href="assets/css/flaticon_shofy.css">
+      <link rel="stylesheet" href="assets/css/spacing.css">
+      
+
+      <link rel="stylesheet" href="assets/css/customize.css"> -->
+
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/style-about.css">
+
+    <link rel="stylesheet" href="assets/css/loading.css">
+
+
+    <style>
+        .ceo-name {
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+
+        .breadcrumb-section {
+            background-color: #f8f9fa;
+            padding: 15px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .breadcrumb {
+            background: transparent;
+            padding: 0;
+            margin: 0;
+        }
+
+        .breadcrumb-item a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .breadcrumb-item a:hover {
+            text-decoration: underline;
+        }
+
+        .breadcrumb-item.active {
+            color: #6c757d;
+            font-weight: 500;
+        }
+
+        .about-section {
+            padding: 80px 0;
+            background-color: #f9f9f9;
+        }
+
+        .section-title {
+            font-size: 32px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .section-title span {
+            color: #D42B31;
+        }
+
+        .highlight {
+            font-weight: 500;
+            color: #555;
+            margin-bottom: 13px;
+        }
+
+        .about-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .about-list li {
+            font-size: 18px;
+            color: #444;
+            margin-bottom: 10px;
+        }
+
+        .about-list i {
+            color: #D42B31;
+            margin-right: 10px;
+        }
+
+        .btn-primary {
+            display: inline-block;
+            padding: 12px 20px;
+            background-color: #D42B31;
+            color: #fff;
+            font-size: 18px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 15px;
+        }
+
+        .btn-primary:hover {
+            background-color: #D42B31;
+        }
+
+        .about-image img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .site-breadcrumb {
+            border-bottom: 1px solid #ddd;
+        }
+    </style>
+
+    <style>
+        .mt-20 {
+            margin-top: 80px !important;
+        }
+
+        .our-team {
+            text-align: center;
+            position: relative;
+        }
+
+        .our-team:hover {
+            cursor: pointer;
+        }
+
+        .our-team img {
+            width: 100%;
+            height: auto;
+        }
+
+        .our-team .team-content {
+            width: 100%;
+            height: auto;
+            background: #ecdfbd;
+            padding: 15px 0;
+            border-left: 5px solid #fb6648;
+            box-shadow: 0 15px 25px 0 rgba(3, 7, 15, 0.1);
+            position: absolute;
+            bottom: -67;
+            right: 0;
+            transition: all 0.5s ease 0s;
+        }
+
+        .our-team:hover .team-content {
+            background: #d42b31;
+        }
+
+        .our-team .title {
+            font-size: 20px;
+            font-weight: 700;
+            color: #5e3448;
+            text-transform: capitalize;
+            margin: 0;
+            transition: all 0.5s ease 0s;
+        }
+
+        .our-team:hover .title {
+            color: #ecdfbd;
+            margin-bottom: 10px;
+        }
+
+        .our-team .post {
+            display: block;
+            font-size: 15px;
+            font-style: italic;
+            color: #fb6648;
+            text-transform: capitalize;
+            height: 0;
+            opacity: 0;
+            transform: scale(0);
+            transition: all 0.5s ease 0s;
+        }
+
+        .our-team:hover .post {
+            height: 40px;
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        .our-team .social {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            opacity: 0;
+            transform: translateY(-60%);
+            transition: all 0.5s ease 0s;
+        }
+
+        .our-team:hover .social {
+            transform: translateY(50%);
+            opacity: 1;
+        }
+
+        .our-team .social li {
+            display: inline-block;
+        }
+
+        .our-team .social li a {
+            display: block;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: #ecdfbd;
+            font-size: 17px;
+            font-weight: 700;
+            line-height: 40px;
+            color: #5e3448;
+            transition: all 0.5s ease 0s;
+        }
+
+        .our-team .social li a:hover {
+            color: #ecdfbd;
+            background: #5e3448;
+        }
+
+        @media only screen and (max-width: 990px) {
+            .our-team {
+                margin-bottom: 74px;
+            }
+
+            .mt-20 {
+                margin-top: 50px !important;
+            }
+
+        }
+
+        .Download-bron {
+            font-size: 20px;
+            font-weight: 500;
+        }
+    </style>
+
+    <style>
+        .tp-history-thumb-wrapper-news {
+            overflow: hidden;
+        }
+
+        .tp-history-thumb-news img {
+            transition: all 0.5s ease;
+        }
+
+        .tp-history-thumb-news img:hover {
+            cursor: pointer;
+            transform: scale(1.1);
+        }
+
+        .tp-history-title-news {
+            font-size: 18px !important;
+            font-weight: 500;
+            line-height: 1.14;
+            margin-bottom: 15px;
+            color: red;
+        }
+    </style>
+
+    <style>
+        .tp-history-content-news h4 {
+            font-size: 20px;
+            line-height: 1.5;
+            margin-bottom: 2px !important;
+            font-weight: 500;
+        }
+    </style>
+
+    <style>
+        .animated-image {
+            /* width: 200px;
+            height: 200px; */
+            animation: moveImage 3s infinite alternate ease-in-out;
+        }
+
+        @keyframes moveImage {
+            0% {
+                transform: translate3d(0px, 0px, 0px);
+            }
+
+            50% {
+                transform: translate3d(15px, -15px, 0px);
+            }
+
+            100% {
+                transform: translate3d(0px, -15px, 15px);
+            }
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <!-- pre loader area start -->
+
+    <div id="loading">
+        <div id="loading-center">
+            <div id="loading-center-absolute">
+                <!-- loading content here -->
+                <div class="tp-preloader-content">
+                    <div class="tp-preloader-logo">
+                        <div class="tp-preloader-circle">
+                            <svg width="190" height="190" viewBox="0 0 380 380" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle stroke="#D9D9D9" cx="190" cy="190" r="180" stroke-width="6"
+                                    stroke-linecap="round"></circle>
+                                <circle stroke="red" cx="190" cy="190" r="180" stroke-width="6" stroke-linecap="round">
+                                </circle>
+                            </svg>
+                        </div>
+                        <img src="assets/images/loader.png" alt="">
+                    </div>
+                    <h3 class="tp-preloader-title">Brulon Group</h3>
+                    <!-- <p class="tp-preloader-subtitle">Loading</p> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- pre loader area end -->
+
+    <!-- header area start -->
+
+    <div id="header-top"></div>
+
+
+    <!-- header area end -->
+    <!-- breadcrumb -->
+    <!-- breadcrumb area start -->
+
+
+
+    <section class="breadcrumb__area2 include-bg pt-75 pb-80">
+        <div class="container">
+            <div class="row">
+                <div class="col-xxl-12">
+                    <div class="breadcrumb__content p-relative z-index-1 text-center">
+                        <h3 class="breadcrumb__title">Home</h3>
+                        <div class="breadcrumb__list">
+                            <span><a href="index.html">Download</a></span>
+                            <span>Product Catalogue</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- breadcrumb area end -->
+    <!-- breadcrumb end -->
+    <!-- 
+    <section class="breadcrumb-section">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"> <i class="far fa-home"></i><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">About Us</li>
+                </ol>
+            </nav>
+        </div>
+    </section> -->
+
+
+    <!-- history area start -->
+
+    <section class="about-section1 ">
+
+        <div class="container pb-">
+            <!-- <div class="row">
+                <div class="col-md-4 col-sm-6">
+
+                    <div class="our-team">
+                        <img src="assets/images/catalogue-product/laboratory-catalogue.png">
+                        <div class="team-content">
+                            <h3 class="title">Laboratory Catalogue</h3>
+                            <span class="post"> <a
+                                    href="assets/images/catalogue-product/Brulon-Catalogue_Laboratory-Segment.pdf"
+                                    class="text-white Download-bron ">Download
+                                    Now</a></span>
+           
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="our-team">
+                        <img src="assets/images/catalogue-product/clinical-product.png">
+                        <div class="team-content">
+                            <h3 class="title">Clinical Catalogue</h3>
+                            <span class="post"> <a
+                                    href="assets/images/catalogue-product/Brulon-Catalogue -Clinical-Segment.pdf"
+                                    class="text-white Download-bron ">Download
+                                    Now</a></span>
+                   
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="our-team">
+                        <img src="assets/images/catalogue-product/alignmet.png">
+                        <div class="team-content">
+                            <h3 class="title">Alginate Catalogue</h3>
+                            <span class="post"> <a href="assets/images/catalogue-product/Brulon-Catalogue-Alginate.pdf"
+                                    class="text-white Download-bron ">Download
+                                    Now</a></span>
+                    
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div> -->
+
+
+            <div class="tp-contact-inner   ">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-8">
+                        <div class="tp-contact-wrapper">
+                            <!-- <h3 class="tp-contact-title">Sent A Message</h3> -->
+
+                            <div class="tp-contact-form">
+                                <form id="contact-form"
+                                    action="https://html.storebuild.shop/shofy-prv/shofy/assets/mail.php" method="POST">
+                                    <div class="tp-contact-input-wrapper">
+                                        <div class="tp-contact-input-box">
+                                            <div class="tp-contact-input">
+                                                <input name="name" id="name" type="text" placeholder="Enter Name">
+                                            </div>
+                                            <div class="tp-contact-input-title">
+                                                <label for="name">Full Name* </label>
+                                            </div>
+                                        </div>
+                                        <div class="tp-contact-input-box">
+                                            <div class="tp-contact-input">
+                                                <input name="email" id="email" type="email" placeholder="Enter Email">
+                                            </div>
+                                            <div class="tp-contact-input-title">
+                                                <label for="email"> Email* </label>
+                                            </div>
+                                        </div>
+                                        <div class="tp-contact-input-box">
+                                            <div class="tp-contact-input">
+                                                <input name="subject" id="subject" type="text"
+                                                    placeholder="Enter Mobile Number">
+                                            </div>
+                                            <div class="tp-contact-input-title">
+                                                <label for="subject">Mobile Number* </label>
+                                            </div>
+                                        </div>
+
+                                        <div class="tp-contact-input-box">
+                                            <div class="tp-contact-input">
+                                                <input name="subject" id="subject" type="text"
+                                                    placeholder="Enter City/State">
+                                            </div>
+                                            <div class="tp-contact-input-title">
+                                                <label for="subject">City/State* </label>
+                                            </div>
+                                        </div>
+
+                                        <div class="profile__input-box">
+                                            <div class="profile__input">
+                                                <select style="display: none;">
+                                                    <option>Laboratory</option>
+                                                    <option>Clinical Catalog</option>
+                                                    <option>Alginate Catalogue</option>
+                                                </select>
+                                                <div class="nice-select" tabindex="0"><span class="current">Select the
+                                                        Brochure</span>
+                                                    <ul class="list">
+                                                        <li data-value="Male" class="option selected">Laboratory
+                                                            Catalogue</li>
+                                                        <li data-value="Female" class="option">Clinical Catalogue</li>
+                                                        <li data-value="Others" class="option">Alginate Catalogue</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- <div class="tp-contact-input-box">
+                                            <div class="tp-contact-input">
+                                                <input name="subject" id="subject" type="text" disabled
+                                                    placeholder="Brochure">
+                                            </div>
+                                            <div class="tp-contact-input-title">
+                                                <label for="subject">Download Brochure* </label>
+                                            </div>
+                                        </div> -->
+                                        <div class="tp-contact-input-box">
+                                            <div class="tp-contact-input">
+                                                <textarea id="message" name="message"
+                                                    placeholder="Write your message here..."></textarea>
+                                            </div>
+                                            <div class="tp-contact-input-title">
+                                                <label for="message">Your Message</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="tp-contact-suggetions mb-20">
+                                        <div class="tp-contact-remeber">
+                                            <input id="remeber" type="checkbox">
+                                            <label for="remeber">Save my name, email, and website in this browser for
+                                                the next time I comment.</label>
+                                        </div>
+                                    </div> -->
+                                    <div class="tp-logout-btn mt-2">
+                                        <button type="submit">Submit</button>
+                                    </div>
+                                </form>
+                                <p class="ajax-response"></p>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="tp-history-wrapper-news">
+
+                            <div class="tp-history-content-news mb-20">
+                                <h4 class="tp-history-title-news">Brochure</h4>
+                                <h3 class="">Download Form</h3>
+                                <!-- <p>Fill in the fields with your details and tell us a little about the reason for your
+                                    Enquiry. Our relationship team will reply to you as soon as possible.</p> -->
+
+
+                            </div>
+
+                            <div class="tp-history-thumb-wrapper-news">
+                                <div class="tp-history-thumb-news m-img">
+                                    <img src="assets/images/news-events-thumb/1.jpg" alt="News & Events"
+                                        class="animated-image-test ">
+                                </div>
+                            </div>
+
+
+
+
+                        </div>
+                    </div>
+                    <!-- <div class="col-xl-6 col-lg-4">
+                        <div class="tp-contact-info-wrapper">
+                            <div class="tp-contact-info-item">
+                                <div class="tp-contact-info-icon">
+                                    <span>
+                                        <img src="assets/img/contact/contact-icon-1.png" alt="">
+                                    </span>
+                                </div>
+                                <div class="tp-contact-info-content">
+                                    <p data-info="mail"><a href="mailto:contact@shofy.com">contact@shofy.com</a></p>
+                                    <p data-info="phone"><a href="tel:670-413-90-762">+670 413 90 762</a></p>
+                                </div>
+                            </div>
+                            <div class="tp-contact-info-item">
+                                <div class="tp-contact-info-icon">
+                                    <span>
+                                        <img src="assets/img/contact/contact-icon-2.png" alt="">
+                                    </span>
+                                </div>
+                                <div class="tp-contact-info-content">
+                                    <p>
+                                        <a href="https://www.google.com/maps/place/New+York,+NY,+USA/@40.6976637,-74.1197638,11z/data=!3m1!4b1!4m6!3m5!1s0x89c24fa5d33f083b:0xc80b8f06e177fe62!8m2!3d40.7127753!4d-74.0059728!16zL20vMDJfMjg2"
+                                            target="_blank">
+                                            84 sleepy hollow st. <br> jamaica, New York 1432
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="tp-contact-info-item">
+                                <div class="tp-contact-info-icon">
+                                    <span>
+                                        <img src="assets/img/contact/contact-icon-3.png" alt="">
+                                    </span>
+                                </div>
+                                <div class="tp-contact-info-content">
+                                    <div class="tp-contact-social-wrapper mt-5">
+                                        <h4 class="tp-contact-social-title">Find on social media</h4>
+
+                                        <div class="tp-contact-social-icon">
+                                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- history area end -->
+
+
+
+    <!-- footer area start -->
+
+    <div id="footer-top"></div>
+
+    <!-- footer area end -->
+
+
+
+    <!-- JS here -->
+
+    <script src="assets/js/vendor/jquery.js"></script>
+    <script src="assets/js/vendor/waypoints.js"></script>
+    <script src="assets/js/bootstrap-bundle.js"></script>
+    <script src="assets/js/meanmenu.js"></script>
+    <script src="assets/js/swiper-bundle.js"></script>
+    <script src="assets/js/slick.js"></script>
+    <script src="assets/js/range-slider.js"></script>
+    <script src="assets/js/magnific-popup.js"></script>
+    <script src="assets/js/nice-select.js"></script>
+    <script src="assets/js/purecounter.js"></script>
+    <script src="assets/js/countdown.js"></script>
+    <script src="assets/js/wow.js"></script>
+    <script src="assets/js/isotope-pkgd.js"></script>
+    <script src="assets/js/imagesloaded-pkgd.js"></script>
+    <script src="assets/js/ajax-form.js"></script>
+    <script src="assets/js/header.js"></script>
+
+    <script src="assets/js/main.js"></script>
+    <script src="include/main.js"></script>
+
+
+
+    <!---Mega menu start-->
+    <link rel="stylesheet" href="assets/css/ruby-menu.css">
+    <link rel="stylesheet" href="assets/css/ruby-menu1.css">
+    <link rel="stylesheet" href="assets/css/menu-style.css">
+    <script src="assets/js/menu-js.js"></script>
+    <script src="assets/js/menu-main.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const toggleButton = document.querySelector('.tp-checkout-login-form-reveal-btn');
+            const formContainer = document.getElementById('tpReturnCustomerLoginForm');
+
+            // Pehle form ko hide karne ke liye CSS set karo
+            formContainer.style.opacity = "0";
+            formContainer.style.display = "none";
+            formContainer.style.transition = "opacity 0.4s ease-in-out"; // Smooth fade effect
+
+            toggleButton.addEventListener("click", function () {
+                if (formContainer.style.display === "none") {
+                    formContainer.style.display = "block"; // Pehle display block karo
+                    setTimeout(() => {
+                        formContainer.style.opacity = "1"; // Phir opacity badhao for fade-in effect
+                    }, 10); // Chhota delay rakha hai taaki smooth lage
+                } else {
+                    formContainer.style.opacity = "0"; // Pehle opacity 0 karo for fade-out effect
+                    setTimeout(() => {
+                        formContainer.style.display = "none"; // Phir form hide karo
+                    }, 400); // Ye transition ke duration jitna hi hona chahiye
+                }
+            });
+        });
+
+    </script>
+    <!---Mega menu end-->
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const couponRevealBtn = document.querySelector(".tp-checkout-coupon-form-reveal-btn");
+            const couponForm = document.getElementById("tpCheckoutCouponForm");
+            const couponInput = couponForm.querySelector("input");
+            const couponSubmitBtn = couponForm.querySelector("button");
+
+            // Initially hide the coupon form
+            couponForm.style.display = "none";
+
+            // Toggle coupon form visibility on button click
+            couponRevealBtn.addEventListener("click", function () {
+                if (couponForm.style.display === "none") {
+                    couponForm.style.display = "block";
+                } else {
+                    couponForm.style.display = "none";
+                }
+            });
+
+            // Handle coupon form submission
+            couponForm.addEventListener("submit", function (event) {
+                event.preventDefault();
+                const couponCode = couponInput.value.trim();
+
+                if (couponCode === "") {
+                    alert("Please enter a coupon code.");
+                } else {
+                    alert(`Coupon code "${couponCode}" applied successfully!`);
+                    couponInput.value = ""; // Clear input after applying
+                }
+            });
+        });
+
+    </script>
+</body>
+
+
+</html>

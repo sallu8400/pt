@@ -1,0 +1,806 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Brulon Group</title>
+    <meta name="description"
+        content="BRULON GROUP has been evolved by the professional experts in dentistry for the last 60 years. With it's third generation in the dental field, BRULON is deeply rooted in dental trade in India.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png">
+    <link rel="stylesheet" href="assets/css/loading.css">
+
+
+
+
+    <!-- CSS here -->
+    <!-- <link rel="stylesheet" href="assets/css/bootstrap.css">
+      <link rel="stylesheet" href="assets/css/animate.css">
+      <link rel="stylesheet" href="assets/css/swiper-bundle.css">
+      <link rel="stylesheet" href="assets/css/slick.css">
+      <link rel="stylesheet" href="assets/css/magnific-popup.css">
+      <link rel="stylesheet" href="assets/css/font-awesome-pro.css">
+      <link rel="stylesheet" href="assets/css/flaticon_shofy.css">
+      <link rel="stylesheet" href="assets/css/spacing.css">
+      
+
+      <link rel="stylesheet" href="assets/css/customize.css"> -->
+
+    <link rel="stylesheet" href="assets/css/blog.css">
+    <link rel="stylesheet" href="assets/css/style-about.css">
+
+    <link rel="stylesheet" href="assets/css/loading.css">
+
+
+    <style>
+        .ceo-name {
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+
+        .breadcrumb-section {
+            background-color: #f8f9fa;
+            padding: 15px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .breadcrumb {
+            background: transparent;
+            padding: 0;
+            margin: 0;
+        }
+
+        .breadcrumb-item a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .breadcrumb-item a:hover {
+            text-decoration: underline;
+        }
+
+        .breadcrumb-item.active {
+            color: #6c757d;
+            font-weight: 500;
+        }
+
+        .about-section {
+            padding: 80px 0;
+            background-color: #f9f9f9;
+        }
+
+        .section-title {
+            font-size: 32px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .section-title span {
+            color: #D42B31;
+        }
+
+        .highlight {
+            font-weight: 500;
+            color: #555;
+            margin-bottom: 13px;
+        }
+
+        .about-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .about-list li {
+            font-size: 18px;
+            color: #444;
+            margin-bottom: 10px;
+        }
+
+        .about-list i {
+            color: #D42B31;
+            margin-right: 10px;
+        }
+
+        .btn-primary {
+            display: inline-block;
+            padding: 12px 20px;
+            background-color: #D42B31;
+            color: #fff;
+            font-size: 18px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 15px;
+        }
+
+        .btn-primary:hover {
+            background-color: #D42B31;
+        }
+
+        .about-image img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .site-breadcrumb {
+            border-bottom: 1px solid #ddd;
+        }
+    </style>
+
+    <style>
+        .mt-20 {
+            margin-top: 80px !important;
+        }
+
+        .our-team {
+            text-align: center;
+            position: relative;
+        }
+
+        .our-team:hover {
+            cursor: pointer;
+        }
+
+        .our-team img {
+            width: 100%;
+            height: auto;
+        }
+
+        .our-team .team-content {
+            width: 100%;
+            height: auto;
+            background: #ecdfbd;
+            padding: 15px 0;
+            border-left: 5px solid #fb6648;
+            box-shadow: 0 15px 25px 0 rgba(3, 7, 15, 0.1);
+            position: absolute;
+            bottom: -67;
+            right: 0;
+            transition: all 0.5s ease 0s;
+        }
+
+        .our-team:hover .team-content {
+            background: #d42b31;
+        }
+
+        .our-team .title {
+            font-size: 20px;
+            font-weight: 700;
+            color: #5e3448;
+            text-transform: capitalize;
+            margin: 0;
+            transition: all 0.5s ease 0s;
+        }
+
+        .our-team:hover .title {
+            color: #ecdfbd;
+            margin-bottom: 10px;
+        }
+
+        .our-team .post {
+            display: block;
+            font-size: 15px;
+            font-style: italic;
+            color: #fb6648;
+            text-transform: capitalize;
+            height: 0;
+            opacity: 0;
+            transform: scale(0);
+            transition: all 0.5s ease 0s;
+        }
+
+        .our-team:hover .post {
+            height: 40px;
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        .our-team .social {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            opacity: 0;
+            transform: translateY(-60%);
+            transition: all 0.5s ease 0s;
+        }
+
+        .our-team:hover .social {
+            transform: translateY(50%);
+            opacity: 1;
+        }
+
+        .our-team .social li {
+            display: inline-block;
+        }
+
+        .our-team .social li a {
+            display: block;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: #ecdfbd;
+            font-size: 17px;
+            font-weight: 700;
+            line-height: 40px;
+            color: #5e3448;
+            transition: all 0.5s ease 0s;
+        }
+
+        .our-team .social li a:hover {
+            color: #ecdfbd;
+            background: #5e3448;
+        }
+
+        @media only screen and (max-width: 990px) {
+            .our-team {
+                margin-bottom: 74px;
+            }
+
+            .mt-20 {
+                margin-top: 50px !important;
+            }
+
+        }
+
+        .Download-bron {
+            font-size: 20px;
+            font-weight: 500;
+        }
+    </style>
+
+    <style>
+        .tp-blog-list-thumb {
+            width: 100% !important;
+            flex: 0 0 auto;
+            overflow: hidden;
+        }
+
+        .tp-blog-list-thumb img {
+            /* max-width: 100%; */
+            width: 100% !important;
+            height: 100%;
+        }
+
+        .bg-light12 {
+            background-color: white;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- pre loader area start -->
+
+    <div id="loading">
+        <div id="loading-center">
+            <div id="loading-center-absolute">
+                <!-- loading content here -->
+                <div class="tp-preloader-content">
+                    <div class="tp-preloader-logo">
+                        <div class="tp-preloader-circle">
+                            <svg width="190" height="190" viewBox="0 0 380 380" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle stroke="#D9D9D9" cx="190" cy="190" r="180" stroke-width="6"
+                                    stroke-linecap="round"></circle>
+                                <circle stroke="red" cx="190" cy="190" r="180" stroke-width="6" stroke-linecap="round">
+                                </circle>
+                            </svg>
+                        </div>
+                        <img src="assets/images/loader.png" alt="">
+                    </div>
+                    <h3 class="tp-preloader-title">Brulon Group</h3>
+                    <!-- <p class="tp-preloader-subtitle">Loading</p> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- pre loader area end -->
+
+    <!-- header area start -->
+
+    <div id="header-top"></div>
+
+
+    <!-- header area end -->
+    <!-- breadcrumb -->
+    <!-- breadcrumb area start -->
+    <!-- breadcrumb area start -->
+    <section class="breadcrumb__area2 include-bg pt-75 pb-80">
+        <div class="container">
+            <div class="row">
+                <div class="col-xxl-12">
+                    <div class="breadcrumb__content p-relative z-index-1 text-center">
+                        <h3 class="breadcrumb__title">Blogs</h3>
+                        <div class="breadcrumb__list">
+                            <span><a href="index.html">Insights</a></span>
+                            <span>Blogs</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- breadcrumb area end -->
+    <!-- breadcrumb area end -->
+    <!-- breadcrumb end -->
+    <!-- 
+    <section class="breadcrumb-section">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"> <i class="far fa-home"></i><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">About Us</li>
+                </ol>
+            </nav>
+        </div>
+    </section> -->
+
+
+    <!-- history area start -->
+
+    <!-- blog grid area start -->
+    <section class="tp-blog-grid-area pb-120  about-section2">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-9 col-lg-8">
+                    <div class="tp-blog-grid-wrapper bg-light12">
+                        <!-- <div class="tp-blog-grid-top d-flex justify-content-between mb-40">
+                            <div class="tp-blog-grid-result">
+                                <p>Showing 1–14 of 26 results</p>
+                            </div>
+                            <div class="tp-blog-grid-tab tp-tab">
+                                <nav>
+                                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                        <button class="nav-link" id="nav-grid-tab" data-bs-toggle="tab"
+                                            data-bs-target="#nav-grid" type="button" role="tab" aria-controls="nav-grid"
+                                            aria-selected="true">
+                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M16.3328 6.01317V2.9865C16.3328 2.0465 15.9061 1.6665 14.8461 1.6665H12.1528C11.0928 1.6665 10.6661 2.0465 10.6661 2.9865V6.0065C10.6661 6.95317 11.0928 7.3265 12.1528 7.3265H14.8461C15.9061 7.33317 16.3328 6.95317 16.3328 6.01317Z"
+                                                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                                <path
+                                                    d="M16.3328 15.18V12.4867C16.3328 11.4267 15.9061 11 14.8461 11H12.1528C11.0928 11 10.6661 11.4267 10.6661 12.4867V15.18C10.6661 16.24 11.0928 16.6667 12.1528 16.6667H14.8461C15.9061 16.6667 16.3328 16.24 16.3328 15.18Z"
+                                                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                                <path
+                                                    d="M7.33281 6.01317V2.9865C7.33281 2.0465 6.90614 1.6665 5.84614 1.6665H3.1528C2.0928 1.6665 1.66614 2.0465 1.66614 2.9865V6.0065C1.66614 6.95317 2.0928 7.3265 3.1528 7.3265H5.84614C6.90614 7.33317 7.33281 6.95317 7.33281 6.01317Z"
+                                                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                                <path
+                                                    d="M7.33281 15.18V12.4867C7.33281 11.4267 6.90614 11 5.84614 11H3.1528C2.0928 11 1.66614 11.4267 1.66614 12.4867V15.18C1.66614 16.24 2.0928 16.6667 3.1528 16.6667H5.84614C6.90614 16.6667 7.33281 16.24 7.33281 15.18Z"
+                                                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
+                                        </button>
+                                        <button class="nav-link active" id="nav-list-tab" data-bs-toggle="tab"
+                                            data-bs-target="#nav-list" type="button" role="tab" aria-controls="nav-list"
+                                            aria-selected="false">
+                                            <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M15 7.11133H1" stroke="currentColor" stroke-width="2"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M15 1H1" stroke="currentColor" stroke-width="2"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M15 13.2222H1" stroke="currentColor" stroke-width="2"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>  -->
+                        <!-- top end -->
+
+                        <div class="tab-content" id="nav-tabContent">
+
+                            <div class="tab-pane fade show active" id="nav-list" role="tabpanel"
+                                aria-labelledby="nav-list-tab" tabindex="0">
+                                <!-- blog list wrapper -->
+                                <div class="tp-blog-list-item-wrapper">
+                                    <div class="tp-blog-list-item d-md-flex d-lg-block d-xl-flex">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="tp-blog-list-thumb text-center">
+                                                    <a href="blog-details.html">
+                                                        <img src="assets/images/news-events-thumb/1.jpg" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12">
+                                                <div class="tp-blog-list-content">
+                                                    <div class="tp-blog-grid-content">
+
+                                                        <h3 class="tp-blog-grid-title">
+                                                            <a href="blog-details.html">Dummy Blog</a>
+                                                        </h3>
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                                                            do
+                                                            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                                                            do
+                                                            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                                        </p>
+
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                                                            do
+                                                            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                                        </p>
+
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                                                            do
+                                                            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                                        </p>
+                                                        <div class="tp-blog-grid-meta">
+                                                            <span>
+                                                                <span>
+                                                                    <svg width="16" height="17" viewBox="0 0 16 17"
+                                                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path
+                                                                            d="M15 8.5C15 12.364 11.864 15.5 8 15.5C4.136 15.5 1 12.364 1 8.5C1 4.636 4.136 1.5 8 1.5C11.864 1.5 15 4.636 15 8.5Z"
+                                                                            stroke="currentColor" stroke-width="1.5"
+                                                                            stroke-linecap="round"
+                                                                            stroke-linejoin="round" />
+                                                                        <path
+                                                                            d="M10.5972 10.7259L8.42715 9.43093C8.04915 9.20693 7.74115 8.66793 7.74115 8.22693V5.35693"
+                                                                            stroke="currentColor" stroke-width="1.5"
+                                                                            stroke-linecap="round"
+                                                                            stroke-linejoin="round" />
+                                                                    </svg>
+                                                                </span>
+                                                                24 April, 2023
+                                                            </span>
+                                                            <span>
+                                                                <span>
+                                                                    <svg width="16" height="17" viewBox="0 0 16 17"
+                                                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path
+                                                                            d="M12.5289 11.881L12.8019 14.093C12.8719 14.674 12.2489 15.08 11.7519 14.779L8.81888 13.036C8.49688 13.036 8.18189 13.015 7.87389 12.973C8.39189 12.364 8.69988 11.594 8.69988 10.761C8.69988 8.77299 6.97788 7.16302 4.84988 7.16302C4.03788 7.16302 3.28888 7.394 2.66588 7.8C2.64488 7.625 2.63788 7.44999 2.63788 7.26799C2.63788 4.08299 5.40288 1.5 8.81888 1.5C12.2349 1.5 14.9999 4.08299 14.9999 7.26799C14.9999 9.15799 14.0269 10.831 12.5289 11.881Z"
+                                                                            stroke="currentColor" stroke-width="1.5"
+                                                                            stroke-linecap="round"
+                                                                            stroke-linejoin="round" />
+                                                                        <path
+                                                                            d="M8.7 10.7611C8.7 11.5941 8.39201 12.3641 7.87401 12.9731C7.18101 13.8131 6.082 14.3521 4.85 14.3521L3.023 15.437C2.715 15.626 2.323 15.3671 2.365 15.0101L2.54 13.6311C1.602 12.9801 1 11.9371 1 10.7611C1 9.52905 1.658 8.44407 2.666 7.80007C3.289 7.39407 4.038 7.16309 4.85 7.16309C6.978 7.16309 8.7 8.77305 8.7 10.7611Z"
+                                                                            stroke="currentColor" stroke-width="1.5"
+                                                                            stroke-linecap="round"
+                                                                            stroke-linejoin="round" />
+                                                                    </svg>
+                                                                </span>
+                                                                Comments (0)
+                                                            </span>
+                                                        </div>
+
+                                                        <!-- <div class="tp-blog-grid-btn">
+                                                            <a href="blog-details.html" class="tp-link-btn-3">
+                                                                Read More
+                                                                <span>
+                                                                    <svg width="17" height="15" viewBox="0 0 17 15"
+                                                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M16 7.5L1 7.5" stroke="currentColor"
+                                                                            stroke-width="1.5" stroke-linecap="round"
+                                                                            stroke-linejoin="round" />
+                                                                        <path
+                                                                            d="M9.9502 1.47541L16.0002 7.49941L9.9502 13.5244"
+                                                                            stroke="currentColor" stroke-width="1.5"
+                                                                            stroke-linecap="round"
+                                                                            stroke-linejoin="round" />
+                                                                    </svg>
+                                                                </span>
+                                                            </a>
+                                                        </div> -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+
+                                </div>
+
+
+                            </div>
+                            <!-- <div class="row">
+                                <div class="col-xl-12">
+                                    <div class="tp-blog-pagination mt-30">
+                                        <div class="tp-pagination">
+                                            <nav>
+                                                <ul>
+                                                    <li>
+                                                        <a href="blog-grid.html"
+                                                            class="tp-pagination-prev prev page-numbers">
+                                                            <svg width="15" height="13" viewBox="0 0 15 13" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M1.00017 6.77879L14 6.77879"
+                                                                    stroke="currentColor" stroke-width="1.5"
+                                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                                                <path
+                                                                    d="M6.24316 11.9999L0.999899 6.77922L6.24316 1.55762"
+                                                                    stroke="currentColor" stroke-width="1.5"
+                                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                                            </svg>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="blog-grid.html">1</a>
+                                                    </li>
+                                                    <li>
+                                                        <span class="current">2</span>
+                                                    </li>
+                                                    <li>
+                                                        <a href="blog-grid.html">3</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="blog-grid.html" class="next page-numbers">
+                                                            <svg width="15" height="13" viewBox="0 0 15 13" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M13.9998 6.77883L1 6.77883"
+                                                                    stroke="currentColor" stroke-width="1.5"
+                                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                                                <path d="M8.75684 1.55767L14.0001 6.7784L8.75684 12"
+                                                                    stroke="currentColor" stroke-width="1.5"
+                                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                                            </svg>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-xl-3 col-lg-4  ">
+                    <div class="tp-sidebar-wrapper tp-sidebar-ml--24 ">
+                        <div class="tp-sidebar-widget mb-35">
+                            <div class="tp-sidebar-search">
+                                <form action="#">
+                                    <div class="tp-sidebar-search-input">
+                                        <input type="text" placeholder="Search...">
+                                        <button type="submit">
+                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M8.11111 15.2222C12.0385 15.2222 15.2222 12.0385 15.2222 8.11111C15.2222 4.18375 12.0385 1 8.11111 1C4.18375 1 1 4.18375 1 8.11111C1 12.0385 4.18375 15.2222 8.11111 15.2222Z"
+                                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                                <path d="M16.9995 17L13.1328 13.1333" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+
+
+                        <!-- latest post start -->
+                        <div class="tp-sidebar-widget mb-35 ">
+                            <h3 class="tp-sidebar-widget-title">Latest Posts</h3>
+                            <div class="tp-sidebar-widget-content bg-light12">
+                                <div class="tp-sidebar-blog-item-wrapper">
+                                    <div class="tp-sidebar-blog-item d-flex align-items-center">
+                                        <div class="tp-sidebar-blog-thumb">
+                                            <a href="blog-details.html">
+                                                <img src="assets/images/news-events-thumb/1.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="tp-sidebar-blog-content">
+                                            <div class="tp-sidebar-blog-meta">
+                                                <span>12 April, 2023</span>
+                                            </div>
+                                            <h3 class="tp-sidebar-blog-title">
+                                                <a href="blog-details.html">Lorem ipsum tempor incididunt ut labore et
+                                                    dolore magna aliqua</a>
+                                            </h3>
+                                        </div>
+                                    </div>
+                                    <div class="tp-sidebar-blog-item d-flex align-items-center">
+                                        <div class="tp-sidebar-blog-thumb">
+                                            <a href="blog-details.html">
+                                                <img src="assets/images/careers.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class=" tp-sidebar-blog-content">
+                                            <div class="tp-sidebar-blog-meta">
+                                                <span>8 July, 2023</span>
+                                            </div>
+                                            <h3 class="tp-sidebar-blog-title">
+                                                <a href="blog-details.html">Lorem Sed do
+                                                    eiusmod tempor incididunt ut labore et dolore magna aliqua</a>
+                                            </h3>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- latest post end -->
+
+
+                        <!-- tag cloud end -->
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="row">
+                <div class="col-9">
+                    <div class="tp-postbox-details-form">
+                        <h3 class="tp-postbox-details-form-title mb-4">Leave a Reply</h3>
+                
+
+                        <div class="tp-postbox-details-form-wrapper">
+                            <div class="tp-postbox-details-form-inner">
+                                <div class="tp-postbox-details-input-box">
+                                    <div class="tp-contact-input">
+                                        <input name="name" id="name" type="text" placeholder="Entr Name">
+                                    </div>
+                                    <div class="tp-postbox-details-input-title">
+                                        <label for="name"> Name</label>
+                                    </div>
+                                </div>
+                                <div class="tp-postbox-details-input-box">
+                                    <div class="tp-contact-input">
+                                        <input name="email" id="email" type="email" placeholder="Enter Email">
+                                    </div>
+                                    <div class="tp-postbox-details-input-title">
+                                        <label for="email">Your Email</label>
+                                    </div>
+                                </div>
+                                <div class="tp-postbox-details-input-box">
+                                    <div class="tp-contact-input">
+                                        <textarea id="msg" placeholder="Write your message here..."></textarea>
+                                    </div>
+                                    <div class="tp-postbox-details-input-title">
+                                        <label for="msg">Your Message</label>
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <div class="tp-postbox-details-input-box">
+                                <button class="tp-btn tp-btn-border tp-btn-border-sm" type="submit">Post
+                                    Comment</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+
+
+    </section>
+    <!-- blog grid area end -->
+
+
+    <!-- history area end -->
+
+
+
+    <!-- footer area start -->
+
+    <div id="footer-top"></div>
+
+    <!-- footer area end -->
+
+
+
+    <!-- JS here -->
+
+    <script src="assets/js/vendor/jquery.js"></script>
+    <script src="assets/js/vendor/waypoints.js"></script>
+    <script src="assets/js/bootstrap-bundle.js"></script>
+    <script src="assets/js/meanmenu.js"></script>
+    <script src="assets/js/swiper-bundle.js"></script>
+    <script src="assets/js/slick.js"></script>
+    <script src="assets/js/range-slider.js"></script>
+    <script src="assets/js/magnific-popup.js"></script>
+    <script src="assets/js/nice-select.js"></script>
+    <script src="assets/js/purecounter.js"></script>
+    <script src="assets/js/countdown.js"></script>
+    <script src="assets/js/wow.js"></script>
+    <script src="assets/js/isotope-pkgd.js"></script>
+    <script src="assets/js/imagesloaded-pkgd.js"></script>
+    <script src="assets/js/ajax-form.js"></script>
+    <script src="assets/js/header.js"></script>
+
+    <script src="assets/js/main.js"></script>
+    <script src="include/main.js"></script>
+
+
+
+    <!---Mega menu start-->
+    <link rel="stylesheet" href="assets/css/ruby-menu.css">
+    <link rel="stylesheet" href="assets/css/ruby-menu1.css">
+    <link rel="stylesheet" href="assets/css/menu-style.css">
+    <script src="assets/js/menu-js.js"></script>
+    <script src="assets/js/menu-main.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const toggleButton = document.querySelector('.tp-checkout-login-form-reveal-btn');
+            const formContainer = document.getElementById('tpReturnCustomerLoginForm');
+
+            // Pehle form ko hide karne ke liye CSS set karo
+            formContainer.style.opacity = "0";
+            formContainer.style.display = "none";
+            formContainer.style.transition = "opacity 0.4s ease-in-out"; // Smooth fade effect
+
+            toggleButton.addEventListener("click", function () {
+                if (formContainer.style.display === "none") {
+                    formContainer.style.display = "block"; // Pehle display block karo
+                    setTimeout(() => {
+                        formContainer.style.opacity = "1"; // Phir opacity badhao for fade-in effect
+                    }, 10); // Chhota delay rakha hai taaki smooth lage
+                } else {
+                    formContainer.style.opacity = "0"; // Pehle opacity 0 karo for fade-out effect
+                    setTimeout(() => {
+                        formContainer.style.display = "none"; // Phir form hide karo
+                    }, 400); // Ye transition ke duration jitna hi hona chahiye
+                }
+            });
+        });
+
+    </script>
+    <!---Mega menu end-->
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const couponRevealBtn = document.querySelector(".tp-checkout-coupon-form-reveal-btn");
+            const couponForm = document.getElementById("tpCheckoutCouponForm");
+            const couponInput = couponForm.querySelector("input");
+            const couponSubmitBtn = couponForm.querySelector("button");
+
+            // Initially hide the coupon form
+            couponForm.style.display = "none";
+
+            // Toggle coupon form visibility on button click
+            couponRevealBtn.addEventListener("click", function () {
+                if (couponForm.style.display === "none") {
+                    couponForm.style.display = "block";
+                } else {
+                    couponForm.style.display = "none";
+                }
+            });
+
+            // Handle coupon form submission
+            couponForm.addEventListener("submit", function (event) {
+                event.preventDefault();
+                const couponCode = couponInput.value.trim();
+
+                if (couponCode === "") {
+                    alert("Please enter a coupon code.");
+                } else {
+                    alert(`Coupon code "${couponCode}" applied successfully!`);
+                    couponInput.value = ""; // Clear input after applying
+                }
+            });
+        });
+
+    </script>
+</body>
+
+
+</html>
